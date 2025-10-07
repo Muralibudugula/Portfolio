@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Murali Budugula — Portfolio</title>
+  <meta name="description" content="Murali Budugula — B.Tech IT student | Full-Stack Intern | Java, Python, HTML, CSS, JavaScript" />
+  <style>
+    :root{
+      --bg:#0f172a; --card:#1e293b; --accent:#06b6d4; --muted:#94a3b8; --text:#e2e8f0; --maxw:1100px;
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);line-height:1.6}
+    .container{max-width:var(--maxw);margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:20px}
+    .avatar{width:92px;height:92px;border-radius:14px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#0f172a}
+    h1{margin:0;font-size:26px;color:var(--accent)}
+    p.lead{margin:6px 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.05)}
+
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .section-title h2{margin:0;font-size:18px;color:var(--accent)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.05);padding:6px 10px;border-radius:999px;color:var(--text);font-size:13px;border:1px solid rgba(255,255,255,0.1)}
+
+    .projects{display:grid;grid-template-columns:1fr;gap:12px}
+    .project{background:rgba(255,255,255,0.04);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.05);display:flex;flex-direction:column;gap:8px}
+    .project h3{margin:0;font-size:15px;color:var(--accent)}
+    .meta{color:var(--muted);font-size:13px}
+    .btn{display:inline-block;padding:6px 16px;border-radius:999px;background:var(--accent);color:#0f172a;text-decoration:none;font-weight:600;font-size:13px;align-self:flex-start}
+    .btn:hover{background:#22d3ee;box-shadow:0 0 10px rgba(34,211,238,0.5)}
+
+    aside .card{position:sticky;top:28px}
+    .contact-list a{display:block;color:var(--accent);text-decoration:none;margin:6px 0}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr;}
+      aside{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">MB</div>
+      <div>
+        <h1>Murali Budugula</h1>
+        <p class="lead">B.Tech (IT) • Full Stack Web Dev Intern • Java • Python • Web</p>
+        <p class="lead">Email: <a href="mailto:muralibudugula43@gmail.com" style="color:var(--accent);text-decoration:none">muralibudugula43@gmail.com</a> • Phone: 9030706582</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <div class="section-title"><h2>About</h2></div>
+          <p>Motivated engineering student pursuing B.Tech in Information Technology (CGPA: 8.20). I enjoy building user-focused web applications and learning new technologies. During my internship I built a full-stack e-commerce platform with authentication, role-based access and inventory management.</p>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <div class="section-title"><h2>Projects</h2></div>
+          <div class="projects">
+            <article class="project">
+              <h3>E-commerce Platform (Internship)</h3>
+              <div class="meta">Full-stack — Product catalog, Cart, Orders, Seller Inventory, JWT auth, Role-based access</div>
+              <p>Built customer and seller flows, implemented JWT authentication for secure sessions, and added admin-level features for inventory control and order management.</p>
+              <a class="btn" href="https://saimart-app.vercel.app/" target="_blank">Link</a>
+            </article>
+
+            <article class="project">
+              <h3>Weather Application</h3>
+              <div class="meta">HTML • CSS • JavaScript • API</div>
+              <p>Displays real-time weather for multiple cities using external APIs. Practiced fetching JSON data and updating the DOM dynamically.</p>
+              <a class="btn" href="https://manoj2k27.github.io/weather_application/" target="_blank">Link</a>
+            </article>
+
+            <article class="project">
+              <h3>Personal Portfolio</h3>
+              <div class="meta">HTML • CSS</div>
+              <p>Responsive portfolio site showcasing my education, projects and contact information.</p>
+              <a class="btn" href="https://github.com/Muralibudugula" target="_blank">Link</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <div class="section-title"><h2>Experience</h2></div>
+          <p><strong>Full Stack Web Development Intern</strong> — May 2025 to July 2025</p>
+          <ul>
+            <li>Developed features for product catalog, cart, order processing and seller inventory control.</li>
+            <li>Implemented JWT authentication and role-based access control for secure routes.</li>
+            <li>Created responsive UI and improved user experience across devices.</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <div class="section-title"><h2>Education</h2></div>
+          <p><strong>B.Tech — Information Technology</strong><br>Sagi Ramakrishnam Raju Engineering College (2022-2026) • CGPA: 8.20</p>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title"><h2>Skills</h2></div>
+          <div class="skills">
+            <div class="chip">Java</div>
+            <div class="chip">Python</div>
+            <div class="chip">SQL (Basics)</div>
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">JavaScript (Basics)</div>
+          </div>
+
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.1);margin:12px 0" />
+
+          <div class="section-title"><h2>Certificates</h2></div>
+          <p class="meta">Java OOP (Udemy), SQL Basics (HackerRank), Web Development (Student Training)</p>
+
+          <div style="height:10px"></div>
+
+          <div class="section-title"><h2>Achievements</h2></div>
+          <p class="meta">Secretary — Computer Society of India (CSI). Organized a 3-day DevOps Bootcamp and 24hr Hackathon.</p>
+
+          <div style="height:10px"></div>
+
+          <div class="section-title"><h2>Contact</h2></div>
+          <div class="contact-list">
+            <a href="mailto:muralibudugula43@gmail.com">Email</a>
+            <a href="tel:9030706582">Phone</a>
+            <a href="https://www.linkedin.com/in/murali-budugula/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Muralibudugula" target="_blank">GitHub</a>
+            <a href="https://www.hackerrank.com/profile/muralibudugula43" target="_blank">HackerRank</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built by Murali • © 2025
+    </footer>
+  </div>
+</body>
+</html>
